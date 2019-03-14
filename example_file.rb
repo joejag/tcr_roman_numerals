@@ -38,6 +38,12 @@ class NumbersTest < Minitest::Test
     'XVI' => 16, 'XVII' => 17, 'XVIII' => 18, 'XIX' => 19, 'XX' => 20}
     examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
   end
+
+  def test_roman_harder
+    examples = {'XI' => 11, 'XII' => 12, 'XIII' => 13, 'XIV' => 14, 'XV' => 15, 
+    'XVI' => 16, 'XVII' => 17, 'XVIII' => 18, 'XIX' => 19, 'XX' => 20}
+    examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
+  end
   
   def test_urnfield
     assert '/' == Urnfield.new.convert(1)

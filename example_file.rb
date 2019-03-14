@@ -28,5 +28,6 @@ class NumbersTest < Minitest::Test
   def test_roman
     assert_equal 'I', Roman.new.convert(1)
     assert_equal 'II', Roman.new.convert(2)
+    assert_equal 'III', Roman.new.convert(3)
   end
 end

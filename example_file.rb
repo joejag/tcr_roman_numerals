@@ -4,12 +4,16 @@ class Urnfield
   def convert(number)
     left = number
     result = ''
+    
+
+    result = result + ('/' * left % 5)
+
     if number >= 5
       left -= 5
       result = '\\'
     end
 
-    result = result + ('/' * left % 5)
+    result
   end
 end
 

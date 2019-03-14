@@ -14,9 +14,12 @@ class Roman
             6 => 'VI', 7 => 'VII', 8 => 'VIII', 9 => 'IX', 10 => 'X'}
     return base[number] if base.has_key? number
 
+    answer = ''
     remaining = number
     if !base.has_key? number
       highest_known = base.keys.sort.reverse
+      answer += base[highest_known[0]]
+      remaining -= highest_known[0]
     end
 
     return 'XI' if number == 11

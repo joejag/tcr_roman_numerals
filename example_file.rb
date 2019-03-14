@@ -10,7 +10,8 @@ end
 
 class Roman
   def convert(number)
-    'I' * number
+    base = {1 => 'I', 2 => 'II', 3 => 'III'}
+    base[number]
   end
 end
 

@@ -1,5 +1,8 @@
 require 'minitest/autorun'
 
+class Urnfield 
+end
+
 class NumbersTest < Minitest::Test
 
   def test_urnfield

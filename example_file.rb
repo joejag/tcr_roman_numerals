@@ -10,7 +10,7 @@ end
 
 class Roman
   def convert(number)
-    base = {1 => 'I', 2 => 'II', 3 => 'III'}
+    base = {1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV'}
     base[number]
   end
 end

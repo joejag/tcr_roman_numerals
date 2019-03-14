@@ -3,7 +3,7 @@ require 'minitest/autorun'
 class Urnfield 
   def convert(number)
     left = number
-    if number == 5
+    if number >= 5
       return '\\'
     end
 

@@ -18,4 +18,7 @@ class NumbersTest < Minitest::Test
     assert_equal '/\\', Urnfield.new.convert(6)
     assert_equal '////\\\\\\\\\\', Urnfield.new.convert(29)
   end
+
+  def test_roman
+  end
 end

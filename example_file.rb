@@ -2,6 +2,7 @@ require 'minitest/autorun'
 
 class Urnfield 
   def convert(number)
+    remainder = number
     return '\\' if number == 5
     '/' * number
   end

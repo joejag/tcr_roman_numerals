@@ -9,7 +9,7 @@ class Urnfield
 end
 
 class Roman
-  def convert
+  def convert(number)
     1
   end
 end
@@ -26,6 +26,6 @@ class NumbersTest < Minitest::Test
   end
 
   def test_roman
-    assert_equal 1, Roman.new.convert
+    assert_equal 1, Roman.new.convert(1)
   end
 end

@@ -23,6 +23,9 @@ class NumbersTest < Minitest::Test
     'VI' => 6, 'VII' => 7, 'VIII' => 8, 'IX' => 9, 'X' => 10 }
     examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
   end
+
+  def test_roman_teens
+  end
   
   def test_urnfield
     assert '/' == Urnfield.new.convert(1)

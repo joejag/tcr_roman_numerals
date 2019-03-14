@@ -2,7 +2,7 @@ require 'minitest/autorun'
 
 class Urnfield 
   def convert(number)
-    '/'
+    '/' * number
   end
 end
 

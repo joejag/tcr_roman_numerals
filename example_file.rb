@@ -8,6 +8,9 @@ class Urnfield
   end
 end
 
+class Roman
+end
+
 class NumbersTest < Minitest::Test
   def test_urnfield
     assert '/' == Urnfield.new.convert(1)
@@ -20,5 +23,6 @@ class NumbersTest < Minitest::Test
   end
 
   def test_roman
+    assert Roman.new
   end
 end

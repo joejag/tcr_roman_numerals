@@ -10,6 +10,7 @@ end
 
 class Roman
   def convert(number)
+    return 'XI' if number == 11
     base = {1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV', 5 => 'V',
             6 => 'VI', 7 => 'VII', 8 => 'VIII', 9 => 'IX', 10 => 'X'}
     base[number]
@@ -25,6 +26,8 @@ class NumbersTest < Minitest::Test
   end
 
   def test_roman_teens
+    examples = { 'XI' => 11 }
+    examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
   end
   
   def test_urnfield

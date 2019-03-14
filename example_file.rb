@@ -22,8 +22,8 @@ class NumbersTest < Minitest::Test
     examples = { 'I' => 1, 'II' => 2, 'III' => 3, 'IV' => 4, 'V' => 5, 
     'VI' => 6, 'VII' => 7, 'VIII' => 8, 'IX' => 9, 'X' => 10 }
     
-    examples.each {|number| }
-    assert_equal 'I', Roman.new.convert(1)
+    examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
+    
   end
   
   def test_urnfield

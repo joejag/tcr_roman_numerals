@@ -2,7 +2,7 @@ require 'minitest/autorun'
 
 class Urnfield 
   def convert(number)
-    '/' * (number % 5) + '\\' * (number / 5)
+    ('/' * (number % 5)) + ('\\' * (number / 5))
   end
 end
 

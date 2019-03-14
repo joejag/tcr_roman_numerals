@@ -34,17 +34,7 @@ class NumbersTest < Minitest::Test
   end
 
   def test_roman_teens
-    examples = {'XI' => 11,
-        'XII' => 12,
-        'XIII' => 13,
-        'XIV' => 14,
-        'XV' => 15,
-        'XVI' => 16,
-        'XVII' => 17,
-        'XVIII' => 18,
-        'XIX' => 19,
-        'XX' => 20}
-
+    examples = {'XI' => 11, 'XII' => 12, 'XIII' => 13, 'XIV' => 14, 'XV' => 15, 'XVI' => 16, 'XVII' => 17, 'XVIII' => 18, 'XIX' => 19, 'XX' => 20}
     examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
   end
   

@@ -17,5 +17,6 @@ class NumbersTest < Minitest::Test
     assert '////' == Urnfield.new.convert(4)
     assert_equal '\\', Urnfield.new.convert(5)
     assert_equal '/\\', Urnfield.new.convert(6)
+    assert_equal '////\\\\\\\\\\', Urnfield.new.convert(29)
   end
 end

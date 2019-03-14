@@ -4,7 +4,7 @@ class Urnfield
   def convert(number)
     ones = number % 5
     fives = number / 5
-    ('/' * ones) + ('\\' * (number / 5))
+    '/' * ones + '\\' * fives
   end
 end
 

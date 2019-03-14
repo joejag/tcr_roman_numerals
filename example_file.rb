@@ -13,6 +13,6 @@ class NumbersTest < Minitest::Test
     assert '//' == Urnfield.new.convert(2)
     assert '///' == Urnfield.new.convert(3)
     assert '////' == Urnfield.new.convert(4)
-    # assert '\\' == Urnfield.new.convert(5)
+    # assert_equal '\\', Urnfield.new.convert(5)
   end
 end

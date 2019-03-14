@@ -5,7 +5,7 @@ class Urnfield
     left = number
     result = ''
     if number >= 5
-      left = left - 5
+      left -= 5
       result = '\\'
     end
 

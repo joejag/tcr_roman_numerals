@@ -5,7 +5,7 @@ class Urnfield
     result = '/' * (number % 5)
 
     if number >= 5
-      result = '\\'
+      result += '\\'
     end
 
     result

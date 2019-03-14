@@ -2,11 +2,9 @@ require 'minitest/autorun'
 
 class Urnfield 
   def convert(number)
-    left = number
-    result = '/' * left % 5
+    result = '/' * number % 5
 
     if number >= 5
-      left -= 5
       result = '\\'
     end
 

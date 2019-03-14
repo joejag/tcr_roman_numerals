@@ -10,10 +10,11 @@ end
 
 class Roman
   def convert(number)
-    return 'XI' if number == 11
     base = {1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV', 5 => 'V',
             6 => 'VI', 7 => 'VII', 8 => 'VIII', 9 => 'IX', 10 => 'X'}
     return base[number] if base.has_key? number
+    return 'XI' if number == 11
+
     'NaN'
   end
 end

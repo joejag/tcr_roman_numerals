@@ -10,7 +10,7 @@ end
 
 class Roman
   def convert(number)
-    base = {1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV'}
+    base = {1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV', 5 => 'V'}
     base[number]
   end
 end
@@ -22,6 +22,8 @@ class NumbersTest < Minitest::Test
     assert_equal 'II', Roman.new.convert(2)
     assert_equal 'III', Roman.new.convert(3)
     assert_equal 'IV', Roman.new.convert(4)
+    assert_equal 'V', Roman.new.convert(5)
+
   end
   
   def test_urnfield

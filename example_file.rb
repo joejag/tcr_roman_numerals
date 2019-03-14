@@ -10,6 +10,7 @@ end
 
 class Roman
   def convert(number)
+    ones = number % 3
     'I' * number
   end
 end

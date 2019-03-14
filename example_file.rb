@@ -3,11 +3,7 @@ require 'minitest/autorun'
 class Urnfield 
   def convert(number)
     result = '/' * (number % 5)
-
-    if number >= 5
-      result += '\\'
-    end
-
+    result += '\\' * (number / 5).to_i
     result
   end
 end

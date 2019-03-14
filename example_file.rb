@@ -9,7 +9,7 @@ class Urnfield
       result = '\\'
     end
 
-    result = result + ('/' * left)
+    result = result + ('/' * left % 5)
   end
 end
 

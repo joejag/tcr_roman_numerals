@@ -16,6 +16,14 @@ class Roman
 end
 
 class NumbersTest < Minitest::Test
+
+  def test_roman
+    assert_equal 'I', Roman.new.convert(1)
+    assert_equal 'II', Roman.new.convert(2)
+    assert_equal 'III', Roman.new.convert(3)
+    # assert_equal 'IV', Roman.new.convert(4)
+  end
+  
   def test_urnfield
     assert '/' == Urnfield.new.convert(1)
     assert '//' == Urnfield.new.convert(2)
@@ -24,12 +32,5 @@ class NumbersTest < Minitest::Test
     assert_equal '\\', Urnfield.new.convert(5)
     assert_equal '/\\', Urnfield.new.convert(6)
     assert_equal '////\\\\\\\\\\', Urnfield.new.convert(29)
-  end
-
-  def test_roman
-    assert_equal 'I', Roman.new.convert(1)
-    assert_equal 'II', Roman.new.convert(2)
-    assert_equal 'III', Roman.new.convert(3)
-    # assert_equal 'IV', Roman.new.convert(4)
   end
 end

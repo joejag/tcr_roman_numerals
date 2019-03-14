@@ -22,7 +22,6 @@ class Roman
       remaining -= highest_known[0]
     end
     return answer + base[remaining]
-    'NaN'
   end
 end
 

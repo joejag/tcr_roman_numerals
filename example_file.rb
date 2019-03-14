@@ -10,7 +10,7 @@ end
 
 class Roman
   def convert(number)
-    1
+    'I'
   end
 end
 
@@ -26,6 +26,6 @@ class NumbersTest < Minitest::Test
   end
 
   def test_roman
-    assert_equal 1, Roman.new.convert(1)
+    assert_equal 'I', Roman.new.convert(1)
   end
 end

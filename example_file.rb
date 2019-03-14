@@ -1,6 +1,9 @@
 require 'minitest/autorun'
 
 class Urnfield 
+  def convert(number)
+    '/'
+  end
 end
 
 class NumbersTest < Minitest::Test

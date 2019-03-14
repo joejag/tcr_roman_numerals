@@ -26,6 +26,6 @@ class NumbersTest < Minitest::Test
   end
 
   def test_roman
-    assert Roman.new.convert
+    assert_equal 1, Roman.new.convert
   end
 end

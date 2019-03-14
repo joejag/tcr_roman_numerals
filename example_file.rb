@@ -22,8 +22,6 @@ class Roman
       remaining -= highest_known[0]
     end
     return answer + base[remaining]
-
-    return 'XI' if number == 11
     'NaN'
   end
 end

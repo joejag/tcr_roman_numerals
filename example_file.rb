@@ -19,16 +19,9 @@ end
 class NumbersTest < Minitest::Test
 
   def test_roman
+    examples = { 'I' => 1, 'II' => 2, 'III' => 3, 'IV' => 4, 'V' => 5, 
+    'VI' => 6, 'VII' => 7, 'VIII' => 8, 'IX' => 9, 'X' => 10 }
     assert_equal 'I', Roman.new.convert(1)
-    assert_equal 'II', Roman.new.convert(2)
-    assert_equal 'III', Roman.new.convert(3)
-    assert_equal 'IV', Roman.new.convert(4)
-    assert_equal 'V', Roman.new.convert(5)
-    assert_equal 'VI', Roman.new.convert(6)
-    assert_equal 'VII', Roman.new.convert(7)
-    assert_equal 'VIII', Roman.new.convert(8)
-    assert_equal 'IX', Roman.new.convert(9)
-    assert_equal 'X', Roman.new.convert(10)
   end
   
   def test_urnfield

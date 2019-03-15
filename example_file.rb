@@ -18,7 +18,7 @@ class Roman
 
     answer = ''
     remaining = number
-    while !base.has_key? remaining
+    while remaining > 0
       highest_known = base.keys.sort.reverse
       while highest_known[0] > remaining
         highest_known.shift
@@ -26,7 +26,7 @@ class Roman
       answer += base[highest_known[0]]
       remaining -= highest_known[0]
     end
-    return answer + base[remaining]
+    return answer
   end
 end
 

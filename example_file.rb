@@ -44,7 +44,7 @@ class NumbersTest < Minitest::Test
   end
 
   def test_roman_harder
-    examples = {'XXV' => 25, 'XL' => 40, 'L' => 50, 'LXIX' => 69, 'XCIX' => 99}
+    examples = {'XXV' => 25, 'XL' => 40, 'L' => 50, 'LXIX' => 69, 'XCIX' => 99, 'C' => 100}
     examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
   end
   

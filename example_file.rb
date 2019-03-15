@@ -40,8 +40,8 @@ class NumbersTest < Minitest::Test
   end
 
   def test_roman_harder
-    # examples = {'XXV' => 25}
-    # examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
+    examples = {'XXV' => 25}
+    examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
   end
   
   def test_urnfield

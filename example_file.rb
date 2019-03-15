@@ -11,7 +11,7 @@ end
 class Roman
   def convert(number)
     base = {1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV', 5 => 'V',
-            6 => 'VI', 7 => 'VII', 8 => 'VIII', 9 => 'IX', 10 => 'X'}
+            6 => 'VI', 7 => 'VII', 8 => 'VIII', 9 => 'IX', 10 => 'X', 40 => 'XL'}
     return base[number] if base.has_key? number
 
     answer = ''
@@ -19,7 +19,7 @@ class Roman
     while !base.has_key? remaining
       highest_known = base.keys.sort.reverse
       while highest_known[0] > remaining
-        highest_known.shift!
+        highest_known.shift
       end
       answer += base[highest_known[0]]
       remaining -= highest_known[0]

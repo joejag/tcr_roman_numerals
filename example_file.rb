@@ -12,7 +12,7 @@ class Roman
   def convert(number)
     base = {1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV', 5 => 'V',
             6 => 'VI', 7 => 'VII', 8 => 'VIII', 9 => 'IX', 10 => 'X', 
-            40 => 'XL'}
+            40 => 'XL', 50 => 'L'}
     return base[number] if base.has_key? number
 
     answer = ''
@@ -44,7 +44,8 @@ class NumbersTest < Minitest::Test
   end
 
   def test_roman_harder
-    examples = {'XXV' => 25, 'XL' => 40}
+    examples = {'XXV' => 25, 'XL' => 40, 
+  }
     examples.each {|k,v| assert_equal k, Roman.new.convert(v) }
   end
   
